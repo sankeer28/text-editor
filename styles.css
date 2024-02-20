@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #ff9966, #ff5e62);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#editor-wrapper {
+    width: 80%;
+    max-height: 90%;
+    min-height: 500px;  /* Set a minimum height */
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    padding: 20px 30px 20px 20px;
+    box-sizing: border-box;
+    overflow: auto;
+    border-radius: 15px;
+    margin: 10px;
+}
+
+#editor-wrapper::-webkit-scrollbar {
+    width: 10px;
+}
+#editor-wrapper::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+#editor-wrapper::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+#editor-wrapper::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+#editor {
+    width: 100%;
+    min-height: 20px;
+    resize: vertical;
+    overflow: auto;
+}
+#font-selector {
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+}
+
+#github-button, #theme-button {
+    margin-left: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
